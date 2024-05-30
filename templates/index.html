@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiante</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos del Estudiante</h1>
+        <p><strong>Nombre:</strong> {{ data.name }}</p>
+        <p><strong>Carnet:</strong> {{ data.carnet }}</p>
+        <p><strong>Universidad:</strong> {{ data.university }}</p>
+        <p><strong>Facultad:</strong> {{ data.faculty }}</p>
+        <p><strong>Curso:</strong> {{ data.course }}</p>
+    </div>
+</body>
+</html>
